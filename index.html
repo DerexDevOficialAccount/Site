@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonCraftMC | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#FF5733',
+              secondary: '#3399FF',
+              dragon: '#FFD700',
+              minecraft: '#4CAF50'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <custom-navbar></custom-navbar>
+    <script src="components/navbar.js"></script>
+
+    <main class="min-h-screen">
+      <!-- Hero Section -->
+      <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <img src="http://static.photos/technology/1200x630/42" class="w-full h-full object-cover opacity-30" alt="Dragon Ball background">
+          <div class="absolute inset-0 bg-gradient-to-b from-primary/50 to-secondary/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-dragon to-minecraft">
+            DragonCraftMC
+          </h1>
+          <p class="text-xl md:text-2xl mb-8">The ultimate fusion of Dragon Ball power and Minecraft creativity!</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/login" class="px-8 py-3 bg-primary hover:bg-primary/80 rounded-full font-bold transition-all transform hover:scale-105">
+              Join Now
+            </a>
+            <a href="#about" class="px-8 py-3 bg-secondary hover:bg-secondary/80 rounded-full font-bold transition-all transform hover:scale-105">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold mb-12 text-center">What is DragonCraftMC?</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm border border-gray-700">
+              <div class="text-primary mb-4">
+                <i data-feather="zap" class="w-12 h-12"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Dragon Ball Powers</h3>
+              <p>Unlock legendary abilities from the Dragon Ball universe. Fly, power up, and unleash devastating attacks!</p>
+            </div>
+            <div class="bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm border border-gray-700">
+              <div class="text-minecraft mb-4">
+                <i data-feather="package" class="w-12 h-12"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Minecraft Gameplay</h3>
+              <p>Explore vast worlds, build incredible structures, and survive in classic Minecraft style.</p>
+            </div>
+            <div class="bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm border border-gray-700">
+              <div class="text-dragon mb-4">
+                <i data-feather="users" class="w-12 h-12"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Thriving Community</h3>
+              <p>Join thousands of players in epic battles, tournaments, and cooperative building projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-20 px-4 bg-gray-800/30">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl font-bold mb-12 text-center">Server Features</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="flex gap-6 items-start">
+              <div class="text-secondary mt-1">
+                <i data-feather="star" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Custom RPG System</h3>
+                <p>Level up your character, unlock new abilities, and become the strongest warrior in the universe.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 items-start">
+              <div class="text-primary mt-1">
+                <i data-feather="sword" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Epic Tournaments</h3>
+                <p>Compete in World Martial Arts Tournaments with amazing prizes for the champions.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 items-start">
+              <div class="text-dragon mt-1">
+                <i data-feather="globe" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">Dragon Ball World</h3>
+                <p>Explore meticulously recreated locations from the Dragon Ball universe.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 items-start">
+              <div class="text-minecraft mt-1">
+                <i data-feather="shield" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2">No Pay-to-Win</h3>
+                <p>Our cosmetics-only shop ensures a fair and balanced experience for all players.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
